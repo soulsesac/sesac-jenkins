@@ -1,11 +1,11 @@
 version: "0.1"
 services :
   sesac-torch:
-    image : ysm2820/sesac-torch
+    image : soulsesac/sesac-jenkins-test
     ports : 
-      - 8888:5000
+      - 5001:5000
     volumes : 
-      - /Users/sumin/Documents/sesac/docker:/home
+      - /Users/soulsesac/jenkins:/home #key file 만들때 생성한 계정명 또는 자유롭게
     environment:
       - STAGE = DEV
 
